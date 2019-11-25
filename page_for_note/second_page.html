@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<HTML>
+  <Head>
+      <meta charset="UTF-8">
+      <title>Новый сайт</title>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="C:\Users\Админ\Desktop\html_v1\start_page\style.css">
+      <script src="C:\Users\Админ\Desktop\html_v1\start_page\java.js"></script>
+    </Head>
+    <Body>
+            <div class="context">
+                    <div id="gray"></div>
+                <div class="header">
+                <div class="inner">
+                        <div class="header__text-color">
+                            <div class ="header-left">
+                                <div style="display:inline">
+                                    <div class="logo">
+                                        <img alt="rocket" src= "C:\Users\Админ\Desktop\html_v1\img\Vector.svg" >
+                                        <img src= "C:\Users\Админ\Desktop\html_v1\img\Vector (1).svg">
+                                    </div>
+                                    <span class="courier"><div class="divider"></div>Курьерская служба доставки</span>
+                                </div>
+                            </div>
+                            <div class ="header-right">
+                                <div class="phone">
+                                    <img src="C:\Users\Админ\Desktop\html_v1\img\Vector (2).svg">
+                                    <span>8(905) 34 53 54</span>
+                                        
+                                </div>
+                                <a class = "enter" onclick="show('block')">Вход</a>
+                                    
+                            </div>
+                            <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="inner">
+                           
+                            
+                            <form action="C:\Users\Админ\Desktop\html_v1\start_page\main.html" class="form">
+                                    <div class="main-text">
+                                            <span>Добавить новость</span>
+                                        
+                                        <p class="text">
+                                            Введите текст новости, а также приложите изображение
+                                        </p>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control"  placeholder="Введите текст новости"></textarea>
+                                    </div>
+                                    <div class="add_img">
+                                        <input id="file-input" type="file" name="photo" multiple accept="image/jpeg,image/png" >
+                                        <label for="file-input"><img src="C:\Users\Админ\Desktop\html_v1\img\Shape.png" >+Добавить изображение</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="button" value="Применить">
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer">
+                            <div class="inner">
+                                <p><img src="C:\Users\Админ\Desktop\html_v1\img\Vector.svg">
+                                    <img src="C:\Users\Админ\Desktop\html_v1\img\Vector (1).svg">
+                                </p>
+                                
+                                <div class="additionalInfo">
+                                    <a href="">О компании</a>
+                                    <br><a href="">Вакансии</a>
+                                    <br><a href="">Клиенту</a>
+                                    <br><a href="">Франчайзинг</a>
+                                
+                                </div> 
+                                <div class="additionalInfo">
+                                        
+                                        <a href="">Доставка из Китая</a>
+                                        <br><a href="">Все услуги</a>
+                                        <br><a href="">Акции</a>
+                                </div>  
+                                <div class="contacts">
+                                    <!-- <p>manager@uexpress.ru </p>
+                                    
+                                    <p>
+                                    115221, г. Челябинск, ул. Северная, д. 29-в
+                                    </p>
+                                    <p>
+                                    Мы работаем по 24 часа
+                                    5 дней в неделю
+                                    </p>-->
+                                    <ul>
+                                        <li>manager@uexpress.ru</li>
+                                        <li>115221, г. Челябинск, ул. Северная, д. 29-в</li>
+                                        <li>Мы работаем по 24 часа 5 дней в неделю</li>
+                                    </ul>
+                                </div>  
+                            </div>
+                        </div>
+                        <div id="login">
+                                <a  onclick="show('none')"> <img src="C:\Users\Админ\Desktop\html_v1\img\close.png" alt="Закрыть" class="close-btn"></a>
+                                <form class="form" action="main.html" class="forma">
+                                    <div class="main-text">
+                                        <span>Авторизация</span>
+                                    
+                                    <p class="text">
+                                    Введите логин и пароль, чтобы войти в личный кабинет
+                                    </p>
+                                </div>
+                                    <input type="email" name="login" placeholder="Логин" class="input"/>
+                                    <input type="password" name="pass"  placeholder="Пароль" class="input"/>
+                                    <input type="submit" value="Войти" class="button">
+                                </form>
+                            </div>
+            </div>
+    </Body>
+</HTML>

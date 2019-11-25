@@ -1,0 +1,403 @@
+﻿
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.context{
+    min-width: 1470px;
+	margin: 0 auto;
+}
+
+#gray{
+    background-color: rgb(1,1,1,0.75);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+.he{
+    height: 723px;
+    background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
+    
+}
+.inner{
+    width: 1270px;
+    margin: 0 auto;
+    
+    padding: 0px 0px 0px 50px;
+}
+.header{
+  
+    font-family: Proxima Nova;
+    font-size: 13px;
+    line-height: 24px;
+    color: #A9C5E0;
+    background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
+}
+.header__text-color{
+    color:#A9C5E0;
+    padding: 20px 0px;
+    font-family: Proxima Nova;
+font-size: 13px;
+line-height: 21px;
+}
+.logo{
+	display:inline;
+	vertical-align: middle;
+}
+
+.courier{
+	/*border-left:1px solid #000000;
+	margin-left:50px;
+	padding:20px;*/
+	display:inline-block;
+	vertical-align: middle;
+	margin: 0px 60px;
+	
+}
+
+
+
+.header-right{
+float:right;
+}
+.header-left{
+	
+float:left;
+}
+.clear{
+	clear:both;
+}
+.phone {
+    display: inline-block;
+    padding: 0 50px;
+}
+.enter{
+	text-decoration: none;
+	color:#E5E31F;
+	border: 1px solid #E5E31F;
+	
+	border-radius:10px;
+    padding:15px 40px;
+	
+}
+
+.divider{
+        position:absolute;
+        width:1px;
+        height:14px;
+        margin: 0 -2.5%;
+        background:#A9C5E0;
+        
+    
+	
+}
+
+
+#viewport{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    top: 57px;
+    height: 610px;
+    overflow: hidden;
+}
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 3);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    
+}
+
+#slidewrapper, #slidewrapper ul, #slidewrapper li {
+    margin: 0px 760px 0px 0px;
+    padding: 0;
+}
+.slide {
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    position: relative;
+    left: 680px;
+    top:-210px
+}
+
+.sliderbuttons {
+    position: absolute;
+    margin: 0px 600px;
+    top: 530px;
+}
+
+
+.order{
+    position: relative;
+    top: -70px;
+}
+.slide b{
+    
+    position: relative;
+    top:150px;
+    font-family: Proxima-Nova;
+    font-size: 64px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+
+.slide p{
+   
+    position: relative;
+    top:150px;
+    font-family: Proxima-Nova;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+
+
+
+.sliderbuttons button{
+    
+    background: #2A496B;
+    border-radius:10px;
+    width: 14px;
+    height: 14px;
+    border: 0px;
+    padding: 0px;
+}
+
+.button{
+    text-decoration: none;
+	color:#2A496B;
+	border: 5px solid #E5E31F;
+	background-color: #E5E31F;
+	border-radius:10px;
+    padding:15px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 10px;
+}
+
+
+
+
+.main{
+    margin: 100px auto;
+    width: 1300px;
+}
+
+.photo {
+    margin: 100px 50px 10px 30px;
+    padding: 10px 0; 
+    text-align: center; 
+    display: inline-block; 
+    font-family: Proxima Nova;
+    font-size: 20px;
+    line-height: 28px;
+    align-self: auto;
+}
+
+
+p.text{
+    
+    font-family: Proxima Nova;
+font-size: 15px;
+line-height: 19px;
+color: #000000;
+font-weight: 100;
+}
+
+.main >b{
+    margin: 0px 500px;
+    padding: 0 0 0 50px;
+    font-family: Proxima Nova;
+    font-size: 28px;
+    line-height: 34px;
+    color: #2A496B;
+}
+.footer{
+    background:radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
+    
+    margin: 0 auto;
+    
+}
+.footer p{
+
+    border: 0px;
+    padding: 0px;
+    position: relative;
+    top: 45px;
+}
+
+/*O komp
+Доставка из Китая Все услуги Акции*/
+.additionalInfo{
+    vertical-align:top;
+position: relative;
+left: 420px;
+margin: 0px 90px 10px 0px; 
+display: inline-block; 
+font-family: Proxima Nova;
+font-size: 20px;
+line-height: 28px;
+     
+     
+}
+.additionalInfo a {
+    font-family: Proxima Nova;
+    font-size: 15px;
+    line-height: 36px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+li{
+    list-style-type: none;
+    margin:20px;
+}
+.contacts{
+    margin: 0 auto;
+font-family: Proxima Nova;
+font-size: 15px;
+line-height: 19px;
+position: relative;
+width: 240px;
+left: 640px;
+display: inline-block; 
+
+color: #A9C5E0;}
+
+#login{
+    position: absolute;
+    top: 450px;
+    left: 30%;
+    z-index: 150;
+    margin: 0 auto;
+    width: 600px;
+    height: 470px;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+    animation-duration: 2s;
+    
+    animation-timing-function: ease-in-out;
+    animation-name: emergence;
+    
+}
+
+@keyframes emergence{
+    from   {top: 0px;  width: 0px; }
+}
+
+.form{
+    width: 470px;
+    height: 340px;
+    padding: 0px 21px;
+    margin: 0 auto;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation-duration: 5s;
+    animation-name: emergence;
+}
+.input{
+    height: 45px;
+    border-radius: 6px;
+    margin: -20px 0px;
+    border: solid;
+    border-width: thin;
+}
+
+.main-text
+{
+    font-family: Proxima Nova;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 90px;
+}
+
+.close-btn{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 30px 30px 0px 400px;
+}
+
+
+section {
+	margin: 0 auto;
+	padding: 800px 0;
+}
+
+.add_img {
+	font-family: 'Proxima Nova';
+	color: #2A496B;
+}
+.add_img div {
+	position: relative;
+	z-index: 10;
+}
+
+.add_img input[type=file] {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	position: absolute;
+	z-index: -10;
+}
+
+.add_img label {
+	font-family: Proxima Nova;
+font-size: 20px;
+}
+
+.add_img label:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
