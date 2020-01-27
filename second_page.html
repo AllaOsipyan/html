@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<HTML>
+  <Head>
+      <meta charset="UTF-8">
+      <title>Новый сайт</title>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="common_style.css">
+      <link rel="stylesheet" href="second_page_style.css">
+      <link rel="stylesheet" href="second-page-mob.css">
+      <link href = "fonts/stylesheet.css" rel = "stylesheet" type = "text/css" />
+      <script src="jscript.js"></script>
+    </Head>
+    <Body>
+            <div class="context">
+                <div id="gray"></div>
+                <div class="header">
+                <div class="inner">
+                        <div class="header__text-color">
+                            <div class ="header-left">
+                                <div style="display:inline">
+                                    <div class="logo">
+                                        <img alt="rocket" src= "img\Vector.svg" >
+                                        <img src= "img\Vector (1).svg">
+                                    </div>
+                                    <span class="courier"><div class="divider"></div>Курьерская служба доставки</span>
+                                </div>
+                            </div>
+                            <div class ="header-right">
+                                <div class="phone">
+                                    <img src="img\Vector (2).svg">
+                                    <span class="tel">8(905) 34 53 54</span>
+                                        
+                                </div>
+                                <a class = "enter" onclick="show('block')">Вход</a>
+                                    
+                            </div>
+                            <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <section>
+                        <div class="inner">
+                           
+                            
+                            
+                                    <div class="description-text">
+                                            <span>Добавить новость</span>
+                                            <div class="text-info" id="format">
+                                                Введите текст новости, а также приложите изображение(размер 270x270px)
+                                            </div>
+                                    </div>
+                                    <form  class="">
+                                        <div class="form-text">
+                                            
+                                            <textarea type="text" id="text-field"  placeholder="Введите текст новости" ></textarea>
+                                            <span class="symbol-count">Символов: 0/150</span>
+                                        </div>
+                                        <div class="add_img">
+                                            <label for="file-input"><div class="icon"><img src="img\Shape.png" > </div><div class="add_img-text">+ Добавить изображение</div></label>
+                                            <input id="file-input" type="file" name="photo" accept="image/*" onchange="handleFileSelect(event)">
+                                            <div class="row">
+                                                <div class="err"> Неверный формат изображения</div>
+                                                <div class="err2"> Превышен лимит символов </div>
+                                                <span id="output"></span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                        <input type="submit" id="apply-btn" class="button" value="Применить">
+                                    </div>
+                            </form>
+                        </div>
+                    </section>
+                    <div class="footer">
+                        <div class="inner">
+                            <div class="fl">
+                                <div class="picture"><img src="img\Vector.svg">
+                                    <img src="img\Vector (1).svg">
+                                </div>
+                                <div class="all-footer-info">
+                                    <div class="add-info-block">
+                                        <div class="additionalInfo">
+                                            <a href="">О компании</a>
+                                            <a href="">Вакансии</a>
+                                            <a href="">Клиенту</a>
+                                            <a href="">Франчайзинг</a>
+                                        
+                                        </div> 
+                                        <div class="additionalInfo">
+                                                
+                                                <a href="">Доставка из Китая</a>
+                                                <a href="">Все услуги</a>
+                                                <a href="">Акции</a>
+                                        </div>  
+                                    </div>
+                                    <div class="contacts">
+                                            <div>manager@uexpress.ru</div>
+                                            <div>115221, г. Челябинск, ул. Северная, д. 29-в</div>
+                                            <div>Мы работаем по 24 часа 5 дней в неделю</div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+        
+                    <div id="login">
+                        
+                        <a  onclick="show('none')"> <img src="img\close.png" alt="Закрыть" class="close-btn"></a>
+                        <form class="form" action="main.html" class="forma">
+                            <div class="main-text">
+                                <span>Авторизация</span>
+                            
+                            <div class="subtitle">
+                            Введите логин и пароль, чтобы войти в личный кабинет
+                            </div>
+                            </div>
+                            <div class="error"></div>
+                            <input type="email" name="login" placeholder="Логин" class="input log"/>
+                            <input type="password" name="pass"  placeholder="Пароль" class="input pass"/>
+                            <input type="submit" value="Войти"  class="button apply">
+                        </form>
+                    </div>
+            </div>
+    </Body>
+</HTML>

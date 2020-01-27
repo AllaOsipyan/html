@@ -1,4 +1,4 @@
-﻿
+﻿@import url("fonts/stylesheet.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,149 +43,86 @@ table {
 	border-spacing: 0;
 }
 
-.context{
-    min-width: 1470px;
-	margin: 0 auto;
-}
-.he{
-    height: 723px;
-    background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
-    
-}
-.inner{
-    width: 1270px;
-    margin: 0 auto;
-}
-.header{
-    display: inline-block;
-    width: 1200px;
-    font-family: Proxima Nova;
-    font-size: 13px;
-    line-height: 24px;
-    color: #A9C5E0;
-}
-.header__text-color{
-	color:#A9C5E0;
-    padding: 20px;
-    font-family: Proxima Nova;
-font-size: 13px;
-line-height: 21px;
-/* identical to box height, or 162% */
-
-    
-}
-.logo{
-	display:inline;
-	vertical-align: middle;
-}
-
-.courier{
-	/*border-left:1px solid #000000;
-	margin-left:50px;
-	padding:20px;*/
-	display:inline-block;
-	vertical-align: middle;
-	margin: 0px 60px;
-	
-}
-
-
-
-.header-right{
-float:right;
-}
-.header-left{
-	
-float:left;
-}
-.clear{
-	clear:both;
-}
-.phone {
-    display: inline-block;
-    padding: 0 50px;
-}
-.enter{
-	text-decoration: none;
-	color:#E5E31F;
-	border: 1px solid #E5E31F;
-	
-	border-radius:10px;
-	padding:15px 40px;
-	
-}
-
-.divider{
-        position:absolute;
-        width:1px;
-        height:14px;
-        margin: 0 -2.5%;
-        background:#A9C5E0;
-        
-    
-	
-}
-
 
 #viewport{
     margin: 0 auto;
     width: 100%;
-    position: relative;
-    top: 80px;
-    height: 590px;
+    height: 633px;
     overflow: hidden;
 }
 #slidewrapper {
-    position: relative;
-    width: calc(100% * 3);
+    /*margin: 50px 0px 0px 0px; */
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
     
 }
 
-#slidewrapper, #slidewrapper ul, #slidewrapper li {
-    margin: 0px 760px 0px 0px;
-    padding: 0;
-}
+
 .slide {
-    list-style: none;
-    display: inline;
-    float: left;
+       /* position: relative; */
+    /* width: calc(100% - 20px); */
+    padding: 0 30% 0 6%;
+    /* height: 510px; */
+    /* list-style: none; */
+    display: flex;
+    /* float: left;*/
+}
+
+.slide-info {
+    margin: 160px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 330px;
+}
+.slide-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
 }
 
 .slide-img {
-    position: relative;
-    left: 680px;
-    top:-210px
+    margin: 0px 100px;
+    height: 650px;
 }
 
-.sliderbuttons {
-    position: absolute;
-    margin: 0px 600px;
-    top: 530px;
-}
-
-
-
-.slide b{
+.slides{
     
-    position: relative;
-    top:150px;
-    font-family: Proxima-Nova;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.sliderbuttons {
+    margin: -50px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 35px;
+}
+
+
+
+.big-text{
+    
+    
+    font-family: 'Proxima Nova Bt';
     font-size: 64px;
     line-height: 64px;
+    width: 570px;
     color: #FFFFFF;
 }
 
-.slide p{
-   
-    position: relative;
-    top:150px;
-    font-family: Proxima-Nova;
-    font-size: 16px;
+.small-text{
+    font-family: 'Proxima Nova Lt';
     line-height: 24px;
+    font-size: 16px;
+    width: 520px;
     color: #FFFFFF;
+
 }
 
 
@@ -194,107 +131,76 @@ float:left;
 .sliderbuttons button{
     
     background: #2A496B;
-    border-radius:10px;
+    border-radius:3px;
     width: 14px;
     height: 14px;
     border: 0px;
     padding: 0px;
 }
 
-.order{
+.button{
+    font-family: 'Proxima Nova Sm';
     text-decoration: none;
 	color:#2A496B;
-	border: 1px solid #E5E31F;
+	border: 5px solid #E5E31F;
 	background-color: #E5E31F;
 	border-radius:10px;
-	padding:15px 40px;
+    padding:15px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 10px;
 }
 
 
 
 
 .main{
-    margin: 100px auto;
-    width: 1300px;
+    margin: 80px auto;
+    height: 700px;
+    max-width: 1600px;
 }
 
-.photo {
-    
-    
-    
-    margin: 100px 50px 10px 10px; 
-    padding: 10px 0; 
-    text-align: center; 
-    display: inline-block; 
-    font-family: Proxima Nova;
+.main .penultimate-photo{
+    margin: 130px 0 0 17%;
+}
+.photo, .penultimate-photo, .last-photo{
+
+    margin: 130px 0 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+    float: left;
+    width: 33%;
+
+}
+.caption{
+    font-family: 'Proxima Nova Sm';
     font-size: 20px;
     line-height: 28px;
-    align-self: auto;
+    color: #000000;
 }
 
-
-.photo p.text{
-    
-    font-family: Proxima Nova;
-font-size: 15px;
-line-height: 19px;
-color: #000000;
+.icon-text{
+    font-family: 'Proxima Nova Sm';
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+    width: 350px;
+    margin: 0 auto;
 }
 
-.main >b{
-    margin: 0px 500px;
-    font-family: Proxima Nova;
+.main .b{
+    margin: 0px 0px 0 40%;
+    font-family: 'Proxima Nova Bt';
     font-size: 28px;
     line-height: 34px;
     color: #2A496B;
 }
-.footer{
-    background:radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
-    
+.opportunities{
+    width: 90%;
     margin: 0 auto;
-    
-}
-.footer p{
-
-    border: 0px;
-    padding: 0px;
-    position: relative;
-    top: 45px;
 }
 
-/*O komp
-Доставка из Китая Все услуги Акции*/
-.additionalInfo{
-    vertical-align:top;
-position: relative;
-left: 420px;
-margin: 0px 90px 10px 0px; 
-display: inline-block; 
-font-family: Proxima Nova;
-font-size: 20px;
-line-height: 28px;
-     
-     
-}
-.additionalInfo a {
-    font-family: Proxima Nova;
-    font-size: 15px;
-    line-height: 36px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-li{
-    list-style-type: none;
-    margin:20px;
-}
-.contacts{
-    margin: 0 auto;
-font-family: Proxima Nova;
-font-size: 15px;
-line-height: 19px;
-position: relative;
-width: 240px;
-left: 640px;
-display: inline-block; 
 
-color: #A9C5E0;}
