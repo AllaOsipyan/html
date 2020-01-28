@@ -10,7 +10,7 @@
         margin: 0px auto;
     }
     .inner {
-        width: 93%;
+        margin: 0 2%;
     }
 
     .courier, .slide-img, .phone{
@@ -21,7 +21,8 @@
         height: 1600px;
     }
     .slide {
-        padding: 0 0% 0 3%;
+        padding: 0 ;
+        width: 33%;
     }
     .slide-info {
         margin: 140px 0;
@@ -29,19 +30,29 @@
     }
    .big-text {
         font-family: 'Proxima Nova Bt';
-        font-size: 42px;
+        font-size: 38px;
         line-height: 46px;
         font-weight: 800;
-        width: 400px;
+        width: 50%;
+        margin: 0 2% 0 0;
+    }
+    #slidewrapper {
+        margin: 0px; 
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 500%;
     }
     
-    
     .small-text {
-        width: 370px;
+        width: 55%;
         font-size: 17px;
     }
     .button {
-        padding: 15px 105px;
+        padding: 2% calc(65% - 290px);
+    }
+    .order {
+        width: 90%;
     }
     #viewport {
         height: 710px;
@@ -49,7 +60,7 @@
     .main .b {
         margin: 50px auto 150px;
         display: block;
-        width: 240px;
+        width: 60%;
     }
     
     .photo {
@@ -64,6 +75,10 @@
     .last-photo,.main .penultimate-photo{
         margin: 130px 0 0 0;
         width: 100%;
+    }
+
+    .icon-text{
+        width:100%;
     }
     .footer {
         height: 613px;
@@ -134,8 +149,29 @@
     }
 
     
-    .inner {
-        width: 97%;
+    .slide {
+        padding: 0 1% ;
+        width: 32%;
+    }
+    .slide-info {
+        margin: 140px 0;
+        height: 300px;
+    }
+   .big-text {
+        width: 70%;
+        margin: 0 2% 0 0;
+    }
+    #slidewrapper {
+        margin: 0px; 
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 500%;
+    }
+    
+    .small-text {
+        width: 55%;
+        font-size: 17px;
     }
 
     .phone{
@@ -143,8 +179,6 @@
         margin: 70px 0 0 55px;
         padding: 0;
     }
-    .slide {
-        padding: 0 30% 0 2%;}
     
     .order, .slide-img{
         display: none;
@@ -160,7 +194,9 @@
     .opportunities {
         width: 100%;
     }
-
+    .icon-text{
+            width:100%;
+        }
     .photo, .main .penultimate-photo {
         margin: 130px 0 0 0;
         width: 50%;
@@ -176,7 +212,7 @@
 
     .all-footer-info {
         width: 60%;
-        margin: 0 0 0 150px;
+        margin: 0 0 0 15%;
         flex-direction: column;
         height: 370px;
         justify-content: space-between;
@@ -184,6 +220,7 @@
 
     .add-info-block {
         margin: -11px 0; 
+        width: 90%;
     }
 
     #login {

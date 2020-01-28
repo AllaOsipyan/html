@@ -61,8 +61,7 @@ table {
     
 }
 .inner{
-    width: 87%;
-    margin: 0 auto;
+    margin: 0 6%;
     max-width: 1600px;
 }
 .header{
